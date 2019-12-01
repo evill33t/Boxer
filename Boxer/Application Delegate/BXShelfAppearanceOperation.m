@@ -130,7 +130,7 @@
 	NSAssert(self.backgroundImageURL != nil, @"BXShelfAppearanceApplicator _applyAppearanceToFolder called without background image.");
     
 	//If the folder doesn't have a custom icon of its own, apply our shelf icon to the folder
-	if (self.icon && ![[NSWorkspace sharedWorkspace] URLHasCustomIcon: folderURL])
+	if (self.icon && ![[NSWorkspace sharedWorkspace] directoryAtURLHasCustomIcon: folderURL])
     {
         [[NSWorkspace sharedWorkspace] setIcon: self.icon forFile: folderURL.path options: 0];
     }

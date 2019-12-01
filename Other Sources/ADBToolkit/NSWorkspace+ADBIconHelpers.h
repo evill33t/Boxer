@@ -33,6 +33,6 @@
 
 /// Returns whether the file or folder at the specified path has a custom icon resource.
 - (BOOL) fileHasCustomIcon: (NSString *)path;
-- (BOOL) URLHasCustomIcon: (NSURL *)URL;
+- (BOOL) directoryAtURLHasCustomIcon: (NSURL *)URL;
 
 @end
